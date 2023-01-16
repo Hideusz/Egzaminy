@@ -1,0 +1,5 @@
+kwerenda 1: SELECT * FROM `pokoje`;
+kwerenda 2: SELECT id_pok, sezon FROM `rezerwacje` WHERE liczba_dn > 7;
+kwerenda 3: SELECT SUM(liczba_dn) FROM `rezerwacje` WHERE sezon = "zima";
+kwerenda 4: UPDATE `rezerwacje` SET `liczba_dn`='4' WHERE liczba_dn < 4;
+kwerenda 5: CREATE USER najemca IDENTIFIED BY 'n@JEM1@!';

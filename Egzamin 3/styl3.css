@@ -1,0 +1,36 @@
+*{
+    font-family: Georgia;
+}
+.baner,
+.stopka{
+    background-color: #C75B39;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
+.lewy{
+    background-color: #FF8A65;
+    flex-basis: 25%;
+    height: 500px;
+    padding-top: 50px;
+}
+.prawy{
+    background-color: Snow;
+    flex-basis: 75%;
+    height: 500px;
+    text-align: center;
+    padding-top: 50px;
+}
+li{
+    margin: 5px;
+}
+li::marker{
+    color: snow;
+}
+h3{
+    margin: 50px 0;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styl_1.css">
+    <title>malarz</title>
+</head>
+<body>
+    <header class="baner">
+        <h1>Malowanie pokoi i biur</h1>
+    </header>
+    <main>
+        <section class="lewy">
+            <h2>Menu</h2>
+            <ul>
+                <li><a href="mieszamy.html">Mieszamy</a></li>
+                <li><a href="cena.html">Wyceniamy</a></li>
+            </ul>
+        </section>
+        <section class="srodkowy">
+            <h2>Zapotrzebowanie na farbę</h2>
+            <form>
+                <label for="metry">Powierzchnia malowania (m<sup>2</sup>:)</label> <input type="number" id="metry">
+                <input type="button" value="Policz" onclick="policz()">
+            </form>
+            <p id="wynik"></p>
+        </section>
+        <section class="prawy">
+            <img src="zad1/obraz.png" alt="Próbki farb">
+        </section>
+    </main>
+    <footer class="stopka">
+        <h3>MALARZ</h3>
+        <p>Stronę opracował: Artur Klatka</p>
+    </footer>
+    <script>
+        function policz()
+        {
+            var metry = document.getElementById("metry").value*1;
+            var wynik = document.getElementById("wynik");
+            wynik.innerHTML = "Liczba potrzebych puszek: " + Math.ceil(metry/4);
+        }
+    </script>
+</body>
+</html>
